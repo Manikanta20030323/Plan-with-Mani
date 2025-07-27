@@ -26,20 +26,22 @@ function Card({tour,removeTours}) {
     }
     
    return(
-    <div>
-        <div>
+    <div className='card_container'>
+        <div className='card_image'>
             <img src={tour.image}></img>
-
         </div>
-        <div>
-            <p>₹{tour.price}</p>
-            <p>{tour.name}</p>
+        <div className='card_content'>
+            <p className='price'>₹{tour.price}</p>
+            <p className='tour_name'>{tour.name}</p>
             <div>
-                <p>{description}</p>
-                <span onClick={read_more_handle}>{read_more ? `Read More` : `Show Less`}</span>
+                {description}
+                <span className='read_more' onClick={read_more_handle}>{read_more ? `Read More` : `Show Less`}</span>
             </div>
         </div>
-        <button onClick={Not_interest_handle}>Not Interested</button>
+        <div className='card_btn'>
+             <button className='not_interested-btn' onClick={Not_interest_handle}>Not Interested</button>
+        </div>
+       
     </div>
    )
 }

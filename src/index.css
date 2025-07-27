@@ -1,6 +1,113 @@
 /* write your css here */
-.wrapper{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+.wrapper{
+    
+    display: flex;
+    justify-content: center;
+   
+}
+
+.container{
+    width: 1300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid black; */
+    
+}
+.card_container{
+    width: 400px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.header{
+    border: 7px dotted #0111a0;
+    width: 500px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    border-radius: 20px;
+    margin: 20px;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.price{
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #1faa59;
+}
+.tour_name{
+    font-size: 1.4em;
+    font-weight: bold;
+}
+.not_interested-btn{
+    width: 300px;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #b4161b;
+    background-color: #b4161b21;
+    border-radius: 10px;
+}
+.read_more{
+    color: #12b0e8;
+    cursor: pointer;
+}
+.card_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    
+
+}
+.not_interested-btn:hover{
+    background-color: red;
+    color: white;
+    transition: all 1s;
+}
+
+
+.refresh_container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.refresh_content{
+    font-size: 2em;
+    font-weight: bold;
+}
+.refresh_button{
+    padding: 10px 20px;
+    font-size: 1.3em;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    cursor: pointer;
 }

@@ -20,9 +20,9 @@ const App = () => {
   if(tours.length ===0)
     {
       
-      return( <div>
-          <div>No Tour Left</div>
-          <button onClick={refresh_handle}>Refresh It</button>
+      return( <div className="refresh_container">
+          <div className="refresh_content">No Tour Left</div>
+          <button className="refresh_button" onClick={refresh_handle}>Refresh It</button>
         </div>);
      console.log("No Tour Left");
     }
